@@ -221,7 +221,13 @@ nav {
 	color: #fff;
 	text-decoration: none;
 	padding: 0.5em 1em;
-	background: var(--color-accent);
+	background: rgb(195, 83, 0);
+	background: linear-gradient(
+		0deg,
+		rgba(195, 83, 0, 1) 0%,
+		rgba(235, 146, 13, 1) 50%
+	);
+	border-radius: 0.4em;
 	transition: 0.25s;
 }
 
