@@ -257,17 +257,18 @@ h1::after {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-
 }
 
-form input, textarea{
-	width: 100%; 
+form input,
+textarea {
+	width: 100%;
 	display: block;
 	padding: 1em;
 	margin-bottom: 1.5em;
-	border-radius: .4em;
+	border-radius: 0.4em;
 	border: none;
-	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; 
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+		rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 button {
@@ -279,7 +280,7 @@ button {
 		rgba(235, 146, 13, 1) 55%
 	);
 	color: var(--color-secondary);
-	border-radius: .4em;
+	border-radius: 0.4em;
 	border: none;
 	padding: 1.5em;
 	margin-bottom: 1em;
@@ -381,5 +382,9 @@ footer {
 
 	.content-text-box {
 		width: 80%;
+	}
+
+	.content-text-box {
+		width: min(900px, 80%);
 	}
 }
