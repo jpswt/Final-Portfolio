@@ -256,6 +256,18 @@ h1::after {
 	text-align: center;
 }
 
+.content-text-box img {
+	width: 300px;
+	border-radius: 50%;
+	margin: 1em auto;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	
+}
+
+.content-text-box strong {
+	font-size: 2rem;
+}
+
 footer {
 	width: 100%;
 	text-align: center;
