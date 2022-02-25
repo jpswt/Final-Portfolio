@@ -11,7 +11,7 @@
 
 	--fs-h1: 4rem;
 	--fs-h2: 4rem;
-	--fs-h3: 3rem;
+	--fs-h3: 2.5rem;
 	--fs-nav: 1.75rem;
 	--fs-mobile-nav: 3rem;
 	--fs-body: 1.75rem;
@@ -56,6 +56,7 @@ h1 {
 
 h2 {
 	font-size: var(--fs-h2);
+	color: var(--color-accent);
 }
 
 h3 {
@@ -253,8 +254,53 @@ h1::after {
 	background: rgba(255, 255, 255, 0.8);
 	border-radius: 0.25em;
 	padding: 0.2em 1em 0.5em;
-	text-align: center;
+	text-align: left;
 }
+
+.grid-header {
+	text-align: center;
+	border-width: 90%;
+	border-bottom: 3px solid var(--color-accent);
+	margin-bottom: 1em;
+
+
+}   
+
+.grid-header p,h2 {
+margin: 0;
+}
+
+.experience, .skills, .education {
+	display: grid;
+	grid-template-columns: 40% 60%;
+	border-width: 90%;
+	border-bottom: 3px solid var(--color-accent);
+	margin-bottom: 1em;
+}
+
+.education{
+	border-bottom: none;
+}
+
+.work-title {
+	grid-column: 1 / 2;
+}
+
+.job-title {
+	margin-top: .2em;
+	margin-left: .5em;
+}
+
+.job-title, .job-text {
+	grid-column: 2 / 3;
+}
+
+.job-text li{
+	color: var(--color-primary);
+	line-height: 1.5;
+	padding: .2em 0;
+}
+
 
 footer {
 	width: 100%;
