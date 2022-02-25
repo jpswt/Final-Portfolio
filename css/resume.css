@@ -11,7 +11,7 @@
 
 	--fs-h1: 4rem;
 	--fs-h2: 4rem;
-	--fs-h3: 2.5rem;
+	--fs-h3: 2.4rem;
 	--fs-nav: 1.75rem;
 	--fs-mobile-nav: 3rem;
 	--fs-body: 1.75rem;
@@ -262,45 +262,46 @@ h1::after {
 	border-width: 90%;
 	border-bottom: 3px solid var(--color-accent);
 	margin-bottom: 1em;
-
-
-}   
-
-.grid-header p,h2 {
-margin: 0;
 }
 
-.experience, .skills, .education {
+.grid-header p,
+h2 {
+	margin: 0;
+}
+
+.experience,
+.skills,
+.education {
 	display: grid;
-	grid-template-columns: 40% 60%;
+	grid-template-columns: 100%;
 	border-width: 90%;
 	border-bottom: 3px solid var(--color-accent);
 	margin-bottom: 1em;
 }
 
-.education{
+.education {
 	border-bottom: none;
 }
 
 .work-title {
-	grid-column: 1 / 2;
+	grid-column: 1 / 3;
 }
 
 .job-title {
-	margin-top: .2em;
-	margin-left: .5em;
+	margin-top: 0.2em;
+	margin-left: 0.7em;
 }
 
-.job-title, .job-text {
-	grid-column: 2 / 3;
+.job-title,
+.job-text {
+	grid-column: 1 / 3;
 }
 
-.job-text li{
+.job-text li {
 	color: var(--color-primary);
 	line-height: 1.5;
-	padding: .2em 0;
+	padding: 0.2em 0;
 }
-
 
 footer {
 	width: 100%;
@@ -362,9 +363,6 @@ footer {
 	background: url(../images/icons.png) -288px -0px;
 }
 
-@media (max-width: 400px) {
-}
-
 @media (min-width: 900px) {
 	.nav-toggle {
 		display: none;
@@ -396,6 +394,21 @@ footer {
 	}
 
 	.content-text-box {
-		width: 80%;
+		width: min(1000px, 80%);
+	}
+
+	.experience,
+	.skills,
+	.education {
+		grid-template-columns: 40% 60%;
+	}
+
+	.work-title {
+		grid-column: 1 / 2;
+	}
+
+	.job-title,
+	.job-text {
+		grid-column: 2 / 3;
 	}
 }
