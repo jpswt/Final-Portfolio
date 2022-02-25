@@ -353,6 +353,10 @@ footer {
 	text-align: center;
 }
 
+footer p {
+	font-size: 1.4rem;
+}
+
 .footer-container {
 	display: flex;
 	justify-content: center;
@@ -368,7 +372,6 @@ footer {
 	height: 32px;
 }
 
-/* Start of section that defines the location for Social icons according to position on image sprite */
 .twitter {
 	background: url(../images/icons.png) -0px -0px;
 }
@@ -406,9 +409,6 @@ footer {
 
 .linkedin:hover {
 	background: url(../images/icons.png) -288px -0px;
-}
-
-@media (max-width: 400px) {
 }
 
 @media (min-width: 900px) {
